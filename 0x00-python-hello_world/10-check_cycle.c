@@ -9,9 +9,9 @@ int check_cycle(listint_t *list)
 	listint_t *myself = list;
 	listint_t *mynext = list;
 
-	if (list == NULL)
+	if (!list)
 		return (0);
-	while (list->next && myself && mynext)
+	while (list->next && myself && mynext != NULL)
 	{
 		myself = myself->next;
 		mynext = mynext->next->next;
