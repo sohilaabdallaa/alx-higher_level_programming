@@ -6,11 +6,13 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *myself = list;
-	listint_t *mynext = list->next;
+	listint_t *myself = NULL;
+	listint_t *mynext = NULL;
 
 	if (list != NULL && list->next != NULL)
 		return (0);
+      	myself = list;
+        mynext = list->next;
 	while (list->next && myself != NULL && mynext != NULL)
 	{
 		if (myself == mynext)
