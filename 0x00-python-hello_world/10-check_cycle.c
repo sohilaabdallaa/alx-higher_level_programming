@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 		return (0);
 	while (list->next && myself !=NULL && mynext)
 	{
-		myself = list->next;
+		myself = myself->next;
 		mynext = mynext->next->next;
 		if (myself == mynext)
 			return (1);
