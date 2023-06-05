@@ -12,8 +12,8 @@ int check_cycle(listint_t *list)
 	if (list != NULL && list->next != NULL)
 		return (0);
       	myself = list;
-        mynext = list->next;
-	while (list->next && myself != NULL && mynext != NULL)
+        mynext = myself->next;
+	while (mynext && myself != NULL && mynext != NULL)
 	{
 		if (myself == mynext)
 			return (1);
