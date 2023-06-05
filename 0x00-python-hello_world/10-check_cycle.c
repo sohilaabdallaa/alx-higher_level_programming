@@ -6,8 +6,8 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *myself = NULL;
-	listint_t *mynext = NULL;
+	listint_t *myself = list;
+	listint_t *mynext = list;
 
 	if (list == NULL)
 		return (0);
