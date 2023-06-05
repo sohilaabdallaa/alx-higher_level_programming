@@ -6,19 +6,17 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *myself = NULL;
-	listint_t *mynext = NULL;
+	listint_t *myself = list;
+	listint_t *mynext = list;
 
 	if (list != NULL && list->next != NULL)
 		return (0);
-      	myself = list;
-        mynext = myself->next;
-	while (mynext->next && myself != NULL && mynext->next->next != NULL)
+	while (mynext->next && myself != NULL && mynext->!= NULL)
 	{
-		if (myself == mynext)
-			return (1);
 		myself = myself->next;
 		mynext = mynext->next->next;
+		if (myself == mynext)
+			return (1);
 	}
 	return (0);
 }
