@@ -11,10 +11,8 @@ int check_cycle(listint_t *list)
 
 	if (list == NULL)
 		return (0);
-	while (myself && mynext)
+	while (myself->next && myself && mynext)
 	{
-		if(myself->next == NULL)
-			break;
 		myself = myself->next;
 		mynext = mynext->next->next;
 		if (myself == mynext)
