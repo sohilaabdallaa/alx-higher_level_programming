@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 
 	if (!list)
 		return (0);
-	while (mynext>next && myself && mynext)
+	while (mynext->next && myself && mynext)
 	{
 		myself = myself->next;
 		mynext = mynext->next->next;
