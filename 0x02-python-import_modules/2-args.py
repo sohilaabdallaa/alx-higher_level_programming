@@ -6,9 +6,10 @@ if __name__ == "__main__":
         print("{:d} arguments.".format(0))
     elif l == 2:
         print("{:d} argument:".format(1))
+        for i in range(1, n):
+            print("{:d}: {}".format(i, sys.argv[i]))
     else:
         print("{:d} arguments".format(l - 1))
-
-    for i in range(1, l):
-        print("{:d}: {}".format(i, sys.argv[i]))
+        for i in range(1, l):
+            print("{:d}: {}".format(i, sys.argv[i]))
 
