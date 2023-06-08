@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    1 = len(sys.argv)
+    l = len(sys.argv)
     if l == 1:
-        print("0 arguments.")
+        print("{:d} {}.".format(0, "arguments"))
     elif l == 2:
         print("{:d} {}:".format(1, "argument"))
     else:   
