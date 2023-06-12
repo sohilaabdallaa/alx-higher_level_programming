@@ -16,20 +16,17 @@ int is_palindrome(listint_t **head)
 
 	if (*head == NULL)
 		return (1);
-	while (counter != NULL)
-	{
-		len++;
-		counter = counter->next;
-	}
-	printf("length = %d", len);
-	arr = realloc(arr, (len * sizeof(int)));
+	arr[0] = (*head)->n;
+
+	counter = counter->next;
 	if (arr == NULL)
 		return (1);
 	counter = *head;
 	while (counter)
 	{
+		len++;
+		arr = realloc(arr, (len * sizeof(int)));
 		arr[i] = counter->n;
-		printf("array [%d] = %d \n", i, arr[i]);
 		i++;
 		counter = counter->next;
 	}
@@ -38,7 +35,7 @@ int is_palindrome(listint_t **head)
 		if (arr[Head] != arr[tail])
 		{
 			free(arr);
-			return(0);
+			return (0);
 		}
 		Head++;
 		tail--;
