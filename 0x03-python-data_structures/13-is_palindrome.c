@@ -16,9 +16,6 @@ int is_palindrome(listint_t **head)
 
 	if (*head == NULL)
 		return (1);
-	arr[0] = (*head)->n;
-
-	counter = counter->next;
 	if (arr == NULL)
 		return (1);
 
