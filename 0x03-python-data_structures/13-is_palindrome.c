@@ -21,7 +21,7 @@ int is_palindrome(listint_t **head)
 	counter = counter->next;
 	if (arr == NULL)
 		return (1);
-	counter = *head;
+
 	while (counter != NULL)
 	{
 		len++;
@@ -33,9 +33,7 @@ int is_palindrome(listint_t **head)
 	while (Head < tail)
 	{
 		if (arr[Head] != arr[tail])
-		{
 			return (0);
-		}
 		Head++;
 		tail--;
 	}
