@@ -10,7 +10,7 @@ int is_palindrome(listint_t **head)
 	listint_t *counter = *head;
 	int len = 0;
 	int Head = 0;
-	int tail = len - 1;
+	int tail = 0;
 	int *arr = malloc(100 * sizeof(int));
 	int i = 0;
 
@@ -27,15 +27,20 @@ int is_palindrome(listint_t **head)
 		i++;
 		counter = counter->next;
 	}
+	tail = len - 1;
 	while (Head < tail)
 	{
 		if (arr[Head] != arr[tail])
+		{
+			free(arr);
 			return (0);
+		}
 		else
 		{
 			Head++;
 			tail--;
 		}
 	}
+	free(arr);
 	return (0);
 }
