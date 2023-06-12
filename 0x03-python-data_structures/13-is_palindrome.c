@@ -37,10 +37,12 @@ int is_palindrome(listint_t **head)
 	{
 		if (arr[Head] != arr[tail])
 		{
-			retur n(0);
+			free(arr)
+			return(0);
 		}
 		Head++;
 		tail--;
 	}
+	free(arr)
 	return (1);
 }
