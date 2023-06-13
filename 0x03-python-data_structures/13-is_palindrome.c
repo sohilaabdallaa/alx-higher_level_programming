@@ -17,7 +17,7 @@ int is_palindrome(listint_t **head)
 	if (*head == NULL)
 		return (1);
 	if (arr == NULL)
-		rieturn (1);
+		return (1);
 	while (counter != NULL)
 	{
 		len++;
