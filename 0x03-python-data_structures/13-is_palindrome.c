@@ -21,8 +21,8 @@ int is_palindrome(listint_t **head)
 	while (counter != NULL)
 	{
 		len++;
-		arr[i] = counter->n;
 		arr = realloc(arr, (len * sizeof(int)));
+		arr[i] = counter->n;
 		i++;
 		counter = counter->next;
 	}
