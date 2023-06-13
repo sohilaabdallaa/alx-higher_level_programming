@@ -3,7 +3,7 @@
 #include <listobject.h>
 
 /**
- * print_python_list_info - C function that prints some basic info about Python lists.
+ * print_python_list_info - function prints some basic info about Python lists.
  * @p: pointer to the corresponding type object
  * Return:void
  */
