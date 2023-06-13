@@ -22,10 +22,11 @@ int is_palindrome(listint_t **head)
 	{
 		len++;
 		arr[i] = counter->n;
+		arr = realloc(arr, (len * sizeof(int)));
 		i++;
 		counter = counter->next;
 	}
-	arr = realloc(arr, (len * sizeof(int)));
+
 	tail = len - 1;
 	while (Head < tail)
 	{
