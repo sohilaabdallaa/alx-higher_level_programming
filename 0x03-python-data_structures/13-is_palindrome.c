@@ -17,16 +17,15 @@ int is_palindrome(listint_t **head)
 	if (*head == NULL)
 		return (1);
 	if (arr == NULL)
-		return (1);
-
+		rieturn (1);
 	while (counter != NULL)
 	{
 		len++;
-		arr = realloc(arr, (len * sizeof(int)));
 		arr[i] = counter->n;
 		i++;
 		counter = counter->next;
 	}
+	arr = realloc(arr, (len * sizeof(int)));
 	tail = len - 1;
 	while (Head < tail)
 	{
