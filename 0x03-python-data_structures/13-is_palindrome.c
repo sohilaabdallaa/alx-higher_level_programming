@@ -11,7 +11,7 @@ int is_palindrome(listint_t **head)
 	int len = 0;
 	int Head = 0;
 	int tail = 0;
-	int *arr = malloc(100000 * sizeof(int));
+	int *arr = malloc(50 * sizeof(int));
 	int i = 0;
 
 	if (*head == NULL)
