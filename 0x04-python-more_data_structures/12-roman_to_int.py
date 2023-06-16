@@ -13,10 +13,11 @@ def roman_to_int(roman_string):
             'D': 500,
             'M': 1000
             }
+    s = roman_string
     intger = 0
-    for i in range(len(roman_string)):
-        if i + 1 < len(roman_string) and roman[roman_string[i]] < roman[roman_string[i + 1]]:
-            intger -= roman[roman_string[i]]
+    for i in range(len(s)):
+        if i + 1 < len(s) and roman[s[i]] < roman[s[i + 1]]:
+            intger -= roman[s[i]]
         else:
-            intger += roman[roman_string[i]]
+            intger += roman[s[i]]
     return intger
