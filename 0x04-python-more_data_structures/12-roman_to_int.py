@@ -15,9 +15,9 @@ def roman_to_int(roman_string):
             }
     intger = 0
     for i in range(len(roman_string)):
-        if i + 1 < len(roman_string) and
-        roman[roman_string[i]] < roman[roman_string[i + 1]]:
-            intger -= roman[roman_string[i]]
+        if i + 1 < len(roman_string):
+            if roman[roman_string[i]] < roman[roman_string[i + 1]]:
+                intger -= roman[roman_string[i]]
         else:
             intger += roman[roman_string[i]]
     return intger
