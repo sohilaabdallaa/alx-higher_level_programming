@@ -13,8 +13,13 @@ class Square:
         """initialize __size private instance variable
         """
         try:
+            """initialize __size private instance variable
+            """
             self. __size = size
+            """ if statment """
             if (size < 0):
+                """ raise an error """
                 raise ValueError("size must be >= 0")
             elif type(size) != int:
+                """ raise an error """
                 raise TypeError("size must be an integer")
