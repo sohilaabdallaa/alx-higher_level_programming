@@ -28,10 +28,10 @@ class Square:
             attribute size with value
         """
         """ if statment """
-        if type(size) != int:
+        if type(value) != int:
             """ raise an error """
             raise TypeError("size must be an integer")
-        elif (size < 0):
+        elif (value < 0):
             """ raise an error """
             raise ValueError("size must be >= 0")
         else:
