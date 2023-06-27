@@ -4,8 +4,8 @@
 """
 
 
-class square:
-    """Define Empty Square Class
-
+class Square:
+    """
+    Empty Square Class Defined
     """
     pass
