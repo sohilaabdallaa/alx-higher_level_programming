@@ -10,10 +10,9 @@ class Square:
     to initialize size
     """
     def __init__(self, size=0):
-        """initialize __size private instance variable
-        """
+        """ initialize __size private instance variable """
         try:
-            """initialize __size private instance variable
+            """ initialize __size private instance variable
             """
             self. __size = size
             """ if statment """
