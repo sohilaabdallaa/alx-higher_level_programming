@@ -37,7 +37,7 @@ class Square:
         else:
             """ initialize __size private instance variable
             """
-            self. __size = size
+            self. __size = value
     """ define a public instance method area
         that returns the current square area
     """
