@@ -13,8 +13,8 @@ class Square:
         """initialize __size private instance variable
             __position is tuple of the 2D Square
         """
-        self.__size = size
-        self.__position = position
+        self._size = size
+        self.position = position
 
     @property
     def size(self):
@@ -39,7 +39,7 @@ class Square:
         else:
             """ initialize __size private instance variable
             """
-            self. __size = value
+            self.__size = value
     """ define a public instance method area
         that returns the current square area
     """
@@ -68,11 +68,11 @@ class Square:
 
     def my_print(self):
         """ that prints in stdout the square with the character """
-        if (self.__size == 0):
+        if (self.size == 0):
             print()
-        for i in range(self.__position[1]):
+        for i in range(self.position[1]):
             print()
-        for i in range(self.__size):
+        for i in range(self.size):
             for k in range(self.position[0]):
                 print(" ", end="")
             for k in range(self.size):
