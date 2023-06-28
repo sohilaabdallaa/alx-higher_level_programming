@@ -13,8 +13,8 @@ class Square:
         """initialize __size private instance variable
             __position is tuple of the 2D Square
         """
-        self. __size = size
-        self. __position = position
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
