@@ -51,16 +51,19 @@ class Square:
 
     @property
     def position(self):
-        """ getter function for retrive the position att """
+        """ getter function for retrive the position att
+            return the position"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        """ setter function for set the tuple position """
-        if type(value) is not tuple or len(value) != 2 or \
-           type(value[0]) is not int or value[0] < 0 or \
-           type(value[1]) is not int or value[1] < 0:
-               raise TypeError("position must be a tuple of 2 positive integers")
+        """ setter function for set the tuple position
+            no return """
+        """ if statment """
+        if not (isinstance(value, tuple) and len(value) == 2 and
+                isinstance(value[0], int) and value[0] >= 0 and
+                isinstance(value[1], int) and value[1] >= 0):
+            raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
