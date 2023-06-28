@@ -7,13 +7,13 @@ No Modules imported
 class Square:
     """
     define a function called __init__
-    to initialize size
+    to initialize size and position tuple
     """
     def __init__(self, size=0, position=(0, 0)):
         """initialize __size private instance variable
             __position is tuple of the 2D Square
         """
-        self._size = size
+        self.size = size
         self.position = position
 
     @property
@@ -57,12 +57,10 @@ class Square:
     @position.setter
     def position(self, value):
         """ setter function for set the tuple position """
-        if assert type(value) != tuple:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif assert type(value[0]) != int or type(value[1]) != int:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif value[0] < 0 or value[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
+        if type(value) is not tuple or len(value) != 2 or \
+           type(value[0]) is not int or value[0] < 0 or \
+           type(value[1]) is not int or value[1] < 0:
+               raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
