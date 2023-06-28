@@ -71,8 +71,9 @@ class Square:
         """ that prints in stdout the square with the character """
         if (self.size == 0):
             print()
+            return
         for i in range(self.position[1]):
-            print("\n")
+            print()
         for i in range(self.size):
             for k in range(self.position[0]):
                 print(" ", end="")
