@@ -59,21 +59,22 @@ class Square:
         """ setter function for set the tuple position """
         if assert type(value) != tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if assert type(value[0]) != int or type(value[1]) != int:
+        elif assert type(value[0]) != int or type(value[1]) != int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if value[0] < 0 or value[1] < 0:
+        elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = value
 
     def my_print(self):
         """ that prints in stdout the square with the character """
         if (self.__size == 0):
             print()
-        else:
-            for i in range(self.__position[1]):
-                print()
-            for i in range(self.__size):
-                for k in range(self.position[0]):
-                    print(" ", end="")
-                for g in range(self.size):
-                    print('#', end="")
-                print()
+        for i in range(self.__position[1]):
+            print()
+        for i in range(self.__size):
+            for k in range(self.position[0]):
+                print(" ", end="")
+            for k in range(self.size):
+                print('#', end="")
+            print()
