@@ -13,7 +13,8 @@ class Rectangle:
     def width(self):
         """ width getter to return width attribute """
         return self.__width
-   @width.setter
+
+    @width.setter
     def width(self, value):
         """ width setter to set value
             for private attribute width
