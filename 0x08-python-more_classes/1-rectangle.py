@@ -3,10 +3,7 @@
 
 
 class Rectangle:
-    """ Rectangle Class
-        private instance attribute width
-        private instance attribute heigth
-    """
+    """ Rectangle Class """
     def __init__(self, width=0, height=0):
         """ Instantiation of width & heigth """
         self.width = width
