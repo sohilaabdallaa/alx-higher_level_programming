@@ -22,7 +22,6 @@ class Rectangle:
         """ heigth getter to return heigth value """
         return self.__heigth
 
-    @width.setter
     def width(self, value):
         """ width setter to set value
             for private attribute width
@@ -33,7 +32,6 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    @heigth.setter
     def heigth(self, value):
         """ heigth setter """
         if type(value) is not int:
