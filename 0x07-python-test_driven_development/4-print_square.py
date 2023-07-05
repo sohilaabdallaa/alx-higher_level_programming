@@ -3,9 +3,9 @@
 No Modules Imported
 """
 
+
 def print_square(size):
     """ prints a square with the character # """
-    
     if type(size) != int:
         """ raise an error """
         raise TypeError("size must be an integer")
