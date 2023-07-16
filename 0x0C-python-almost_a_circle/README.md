@@ -2,7 +2,7 @@
  
 ## In this project, I will Review everything about Python:
 <br>
-<p>
+
 - Import
 - Exceptions
 - Class
@@ -16,4 +16,4 @@
 - args and kwargs
 - Serialization/Deserialization
 - JSON
-<\p>
+
